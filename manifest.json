@@ -1,0 +1,12 @@
+{
+  "name": "Stay Focused!!!!",
+  "version": "1.0",
+  "description": "Sensei I really really want to stay focused!",
+  "permissions": ["webRequest", "webRequestBlocking",
+                  "<all_urls>"],
+  "background": {
+    "scripts": ["url.js", "background.js"]
+  },
+
+  "manifest_version": 2
+}
