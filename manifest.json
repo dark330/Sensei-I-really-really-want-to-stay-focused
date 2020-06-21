@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "Getting Started Example",
   "version": "1.0",
     "description": "Build an Extension!",
@@ -10,5 +11,16 @@
     "page_action":{
 	"default_popup": "popup.html"
     },
+=======
+  "name": "Stay Focused!!!!",
+  "version": "1.0",
+  "description": "Sensei I really really want to stay focused!",
+  "permissions": ["webRequest", "webRequestBlocking",
+                  "<all_urls>"],
+  "background": {
+    "scripts": ["url.js", "background.js"]
+  },
+
+>>>>>>> 03713857cab7018a513de017c9c225c9ec8f074a
   "manifest_version": 2
 }
