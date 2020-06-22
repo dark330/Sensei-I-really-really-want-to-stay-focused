@@ -7,8 +7,15 @@
   "background": {
     "scripts": ["url.js", "background.js"]
   },
-  "page_action":{
-	"default_popup": "popup.html"
+  "options_page": "options.html",
+  "browser_action": {
+    "default_icon": {
+      "16": "images/good16.jpg",
+      "32": "images/good32.jpg",
+      "48": "images/good48.jpg",
+      "128": "images/good128.jpg"
+    },
+    "default_popup": "popup.html"
   },
   "manifest_version": 2
 }
