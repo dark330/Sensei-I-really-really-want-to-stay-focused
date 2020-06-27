@@ -1,0 +1,23 @@
+body, .category {
+  display: flex;
+  flex-direction: column;
+}
+
+.category div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border: 1px solid black;
+}
+
+section {
+  border: 1px solid black;
+}
+
+.checked {
+  text-decoration: line-through;
+}
+
+.hidden {
+  display: none;
+}

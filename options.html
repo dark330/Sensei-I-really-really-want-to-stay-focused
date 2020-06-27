@@ -2,17 +2,22 @@
 <html>
   <head>
     <link rel="stylesheet" href="styles.css">
-    <input type=text id="reUrl" placeholder="www.leetcode.com">
-    <button id="updateURL">Update URL</button>
   </head>
   <body>
-    <section>
-      <p>category1</p>
-      <button>update</button>
-      <button>expand</button>
+    <div>
+      <input type=text id="reUrl" placeholder="www.leetcode.com">
+      <button id="updateURL">Update URL</button>
+    </div>
+    <section id="category1" class="category">
+      <div>
+        <h2>category1</h2>
+        <button>update</button>
+        <button>expand</button>
+        <input type="checkbox">
+      </div>
       <ul>
-        <li>url1</li> <input type="checkbox" id="url1">
-        <li>url2</li> <input type="checkbox" id="url2">
+        <li id="url1" class="checked">url1</li>
+        <li id="url2">url2</li>
       </ul>
     </section>
   </body>
