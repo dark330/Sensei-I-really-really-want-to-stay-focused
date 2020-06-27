@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
-      button {
-        height: 50px;
-        width: 50px;
-        outline: none;
-        margin: 10px;
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <input type=text id="reUrl" placeholder="www.leetcode.com">
+    <button id="updateURL">Update URL</button>
   </head>
   <body>
-    <div id="buttonDiv">
-    </div>
-    <div>
-      <p>Edit the list of blocked websites</p>
-    </div>
+    <section>
+      <p>category1</p>
+      <button>update</button>
+      <button>expand</button>
+      <ul>
+        <li>url1</li> <input type="checkbox" id="url1">
+        <li>url2</li> <input type="checkbox" id="url2">
+      </ul>
+    </section>
   </body>
   <script src="options.js"></script>
 </html>
