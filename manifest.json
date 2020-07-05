@@ -8,6 +8,7 @@
     "scripts": ["url.js", "background.js"]
   },
   "options_page": "options.html",
+  "web_accessible_resources": ["links.json"],
   "browser_action": {
     "default_icon": {
       "16": "images/good16.jpg",

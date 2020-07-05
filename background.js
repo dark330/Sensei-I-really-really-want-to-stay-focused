@@ -4,6 +4,7 @@
 
 var STUDY_MODE = false;
 var blockUrls = [];
+const LINK_PATH = chrome.runtime.getURL("links.json");
 
 loadQuery();
 
@@ -11,12 +12,26 @@ function loadQuery() {
   try {
       var jsonQueries = localStorage.getItem("saved_urls");
       var queries = JSON.parse(jsonQueries) || [];
-      blockUrls = queries; 
+      blockUrls = queries;
   } catch(e) {
       blockUrls = [];
   }
   // showList();
-  console.log(blockUrls);
+  if (blockUrls.length === 0) {
+    getDefault();
+  }
+}
+
+function getDefault() {
+  fetch(LINK_PATH)
+  .then(response => response.json())
+  .then(loadDefault)
+}
+
+function loadDefault(defaultLinks) {
+  blockUrls = defaultLinks;
+  //console.log(blockUrls);
+  //console.log(blockUrls.Adult)
 }
 
 function writeQuery(input_url) {
@@ -24,7 +39,6 @@ function writeQuery(input_url) {
   var jsonQueries = JSON.stringify(blockUrls);
   localStorage.setItem("saved_urls", jsonQueries);
   // showList();
-
 }
 
 chrome.webRequest.onBeforeRequest.addListener(
